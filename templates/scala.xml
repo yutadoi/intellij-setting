@@ -1,0 +1,7 @@
+<templateSet group="scala">
+  <template name="priv" value="println(&quot;$EXPR_COPY$ = &quot; + $EXPR$)" description="Template for expressions output" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="scalaVariableOfType(&quot;&quot;)" defaultValue="false" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="false" />
+    <context />
+  </template>
+</templateSet>

@@ -1,0 +1,74 @@
+<templateSet group="LastaFlute">
+  <template name="_ladany" value="@Resource&#10;private $END$ anything;" description="LastaFlute: DI for Anything" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_ladasync" value="@Resource&#10;private AsyncManager asyncManager;" description="LastaFlute: DI for AsyncManager" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_laprop" value="public $PROP$ $END$" description="LastaFlute: Public Property simply" toReformat="false" toShortenFQNames="true">
+    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lapvalidclass" value="@Valid&#10;public $OBJECT_TYPE$ $OBJECT_NAME$;&#10;&#10;public static class $OBJECT_TYPE$ {&#10;&#10;    @Required&#10;    public $PROPERTY_TYPE$ $OBJECT_NAME$;&#10;}" description="LastaFlute: Public Property as Valid Class" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lapvalidlist" value="@Valid&#10;public List&lt;$OBJECT_TYPE$&gt; $OBJECT_NAME$;&#10;&#10;public static class $OBJECT_TYPE$ {&#10;&#10;    @Required&#10;    public $PROPERTY_TYPE$ $OBJECT_NAME$;&#10;}" description="LastaFlute: Public Property as Valid List" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lavclienterr" value="groups = ClientError.class" description="LastaFlute: Validator groups=ClientError.class" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lavmorevalidate" value="moreValidate($VAR$, messages)" description="LastaFlute: Validator moreValidate(form|body, messages)" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lahtml" value="@Execute&#10;public org.lastaflute.web.response.HtmlResponse $METHOD$(Long $OBJECT$Id, $FORM$Form form) {&#10;    $END$&#10;    return asHtml(path_$NEWNAME$);&#10;}" description="LastaFlute: Execute Method as HTML response with ID and Form" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NEWNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lajson" value="@Execute&#10;public org.lastaflute.web.response.JsonResponse&lt;$BEAN$&gt; $METHOD$(Long $OBJECT$Id, $BODY$Body body) {&#10;    $END$&#10;    return asJson(bean);&#10;}" description="LastaFlute: Execute Method as JSON response with ID and Body" toReformat="false" toShortenFQNames="true">
+    <variable name="BEAN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lavmessages" value="messages -&gt; {}" description="LastaFlute: Validator for moreValidationLambda" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_lavreterrorhtml" value="() -&gt; {&#10;    return asHtml(path_$NEWNAME$);&#10;}" description="LastaFlute: Validator for validationErrorLambda" toReformat="false" toShortenFQNames="true">
+    <variable name="NEWNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,214 @@
+<templateSet group="DBFlute">
+  <template name="_order" value=".addOrderBy_$COLUMNNAME$" description="DBFlute: .addOrderBy_..." toReformat="false" toShortenFQNames="true">
+    <variable name="COLUMNNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_query" value="$VAR$.query()" description="DBFlute: cb.query()" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_specify" value="$VAR$.specify()" description="DBFlute: cb.specify()" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_todo" value="// TODO $USER$ $END$ ($DATE$)" description="TODO comment" toReformat="false" toShortenFQNames="true">
+    <variable name="USER" expression="user()" defaultValue="" alwaysStopAt="false" />
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_trev" value="// TODO $NEWNAME$ $END$ by $USER$ ($DATE$)" description="TODO review comment" toReformat="false" toShortenFQNames="true">
+    <variable name="NEWNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="USER" expression="user()" defaultValue="" alwaysStopAt="false" />
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taassl" value="// ===================================================================================&#10;//                                                                        Assist Logic&#10;//                                                                        ============" description="TagComment: Assist Logic" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taattr" value="// ===================================================================================&#10;//                                                                           Attribute&#10;//                                                                           =========" description="TagComment: Attribute" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tacallb" value="// ===================================================================================&#10;//                                                                            Callback&#10;//                                                                            ========" description="TagCommnet: Callback" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taconst" value="// ===================================================================================&#10;//                                                                         Constructor&#10;//                                                                         ===========" description="TagComment: Constructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taconv" value="// ===================================================================================&#10;//                                                                           Converter&#10;//                                                                           =========" description="TagComment: Converter" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tadef" value="// ===================================================================================&#10;//                                                                          Definition&#10;//                                                                          ==========" description="TagComment: Definition" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tadicom" value="// -----------------------------------------------------&#10;//                                          DI Component&#10;//                                          ------------" description="Nest tag comment for DI components" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tadisp" value="// -----------------------------------------------------&#10;//                                          Display Data&#10;//                                          ------------" description="Nest tag comment for display data of Action" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taexec" value="// ===================================================================================&#10;//                                                                             Execute&#10;//                                                                             =======" description="Execute Methods of Action" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tafree" value="// ===================================================================================&#10;//                                                                           Free Item$END$&#10;//                                                                           =========" description="TagComment: Xxx" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taacce" value="// ===================================================================================&#10;//                                                                            Accessor&#10;//                                                                            ========" description="TagComment: Accessor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tahelp" value="// ===================================================================================&#10;//                                                                          Xxx$END$ Helper&#10;//                                                                          ==========" description="TagComment: Xxx Helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tanest" value="// -----------------------------------------------------&#10;//                                                XxxYyy$END$&#10;//                                                ------" description="TagComment: Nested Comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taover" value="// ===================================================================================&#10;//                                                                        Xxx$ENE$ Override&#10;//                                                                        ============" description="TagComment: Xxx Override" toReformat="false" toShortenFQNames="true">
+    <variable name="ENE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tavalid" value="// ===================================================================================&#10;//                                                                          Validation&#10;//                                                                          ==========" description="Validation methods for Action" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tabaov" value="// ===================================================================================&#10;//                                                                      Basic Override&#10;//                                                                      ==============" description="TagComment: Basic Override" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tahook" value="// ===================================================================================&#10;//                                                                               Hook&#10;//                                                                              ======" description="TagComment: Hook" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tainit" value="// ===================================================================================&#10;//                                                                          Initialize&#10;//                                                                          ==========" description="TagComment: Initialize" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tamapp" value="// ===================================================================================&#10;//                                                                             Mapping&#10;//                                                                             =======" description="TagComment: Mapping" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tareqmp" value="// ===================================================================================&#10;//                                                                     Request Mapping&#10;//                                                                     ===============" description="TagComment: Request Mapping" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taselect" value="// ===================================================================================&#10;//                                                                              Select&#10;//                                                                              ======" description="TagComment: Select" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_tasmhp" value="// ===================================================================================&#10;//                                                                        Small Helper&#10;//                                                                        ============" description="TagComment: Small Helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_taupdate" value="// ===================================================================================&#10;//                                                                              Update&#10;//                                                                              ======" description="TagComment: Update" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_clogger" value="private static final org.apache.commons.logging.Log LOG = org.apache.commons.logging.LogFactory.getLog($CLASS$.class);" description="Commons Logging Logger" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_logger" value="private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger($CLASS$.class);" description="Slf4j Logger" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_utest" value="public void test_$METHOD$() throws Exception {&#10;    // ## Arrange ##&#10;&#10;    // ## Act ##&#10;&#10;    // ## Assert ##&#10;}" description="UTFlute: Create Test" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_ossele" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- #df:entity#&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;select ...&#10;  from ...&#10; where ...&#10; order by ..." description="DBFlute: Outside SQL select" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_osscur" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- #df:entity#&#10;-- +cursor+&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;select ...&#10;  from ...&#10; where ...&#10; order by ..." description="DBFlute: OutsideSQL select cursor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_osssca" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- #df:entity#&#10;-- +scalar+&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;select ...&#10;  from ...&#10; where ...&#10; order by ..." description="DBFlute: OutsideSQL select scalar" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_ossdoma" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- #df:entity#&#10;-- +domain+&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;select ...&#10;  from ...&#10; where ...&#10; order by ..." description="DBFlute: OutsideSQL select domain" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_osspage" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- #df:entity#&#10;&#10;-- !df:pmb extends Paging!&#10;-- !!AutoDetect!!&#10;&#10;/*IF pmb.isPaging()*/&#10;select ...&#10;-- ELSE select count(*)&#10;/*END*/&#10;  from ...&#10; where ...&#10;/*IF pmb.isPaging()*/&#10; order by ...&#10;/*END*/" description="DBFlute: OutsideSQL select page" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_osinsert" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;insert into ..." description="DBFlute: OutsideSQL insert" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_osupdate" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;update ...&#10;   set ...&#10; where ..." description="DBFlute: OutsideSQL update" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_osdelete" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;delete from ...&#10; where ..." description="DBFlute: OutsideSQL delete" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="_osother" value="/*&#10; [SQL title here]&#10;  SQL Description here.&#10;*/&#10;&#10;-- !df:pmb!&#10;-- !!AutoDetect!!&#10;&#10;" description="DBFlute: OutsideSQL other" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
